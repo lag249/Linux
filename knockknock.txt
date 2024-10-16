@@ -1,0 +1,32 @@
+#Lindsay Graham
+
+#CIS 117 Lab 8 - Scripting & Conditionals
+#Knock-knock Jokes
+
+#!/bin/bash
+
+#echo will print the first line of the knock-knock joke and then read the user input and store it as a variable called answer
+
+echo "Knock-knock"
+read answer
+
+#below is an if statement that says if the input that is read is equal to the string "Who's there?", then "orange" should be printed to the screen. If the first condition is not true, signified by "else",  echo will print "Who's there? is the correct response to let the user know what to type to move forward."fi" signifies that the if statement has ended.
+ 
+if [ "$answer" == "Who's there?" ]
+then
+	echo "orange"
+else
+	echo "Who's there? is the correct response."
+fi
+
+#the read command asks for the second user input and stores it as variable answer2. Another if statement is used to test if the user input variable answer2 is equal to "orange who?".If it is equal, the joke will complete, else an error message will print. "fi" will signify the end of the second if statement.
+ 
+read answer2
+
+if [ "$answer2" == "orange who?" ]
+then
+	echo "orange you glad I didn't say banana?!"
+else
+	echo "orange who? is the correct response"
+fi
+
